@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - ethereumjs-testrpc > webpack > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - truffle-hdwallet-provider > web3-provider-engine > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - ethereumjs-testrpc > webpack > watchpack > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - truffle-hdwallet-provider > web3-provider-engine > ethereumjs-block > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - truffle-hdwallet-provider > web3-provider-engine > ethereumjs-vm > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - truffle-hdwallet-provider > web3-provider-engine > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
+    - truffle-hdwallet-provider > web3-provider-engine > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-04-30T22:06:55.519Z'
