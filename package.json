@@ -9,7 +9,9 @@
     "test": "npm run lint ./ && truffle test",
     "fix": "eslint --fix",
     "lint": "eslint",
-    "publish": "truffle publish"
+    "publish": "truffle publish",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Yorke Rhodes <yorke.rhodesiv@consensys.net>, Aspyn Palatnick <aspyn.palatnick@consensys.net>, Cem Ozer <cem.ozer@consensys.net>",
   "license": "ISC",
@@ -24,12 +26,14 @@
     "ethjs-rpc": "0.1.5",
     "ethjs-util": "0.1.4",
     "truffle": "4.1.8",
-    "truffle-hdwallet-provider": "0.0.3"
+    "truffle-hdwallet-provider": "0.0.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "4.4.1",
     "eslint-config-airbnb-base": "11.3.1",
     "eslint-plugin-import": "2.7.0",
     "solidity-coverage": "0.4.15"
-  }
+  },
+  "snyk": true
 }
